@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0",
+  "title": "Mega Man SFR Music Track Mapping",
+  "description": "Maps Mega Man SFR OGG tracks to mashup encounters",
+  "tracks_available": 59,
+  "tracks_confirmed": [
+    {
+      "filename": "Boss.ogg",
+      "use": "Generic boss encounter theme",
+      "file_size_bytes": 377002,
+      "status": "READY"
+    },
+    {
+      "filename": "AxeMan.ogg",
+      "use": "Weapon pickup or stage clear",
+      "file_size_bytes": 771548,
+      "status": "READY"
+    },
+    {
+      "filename": "CoalMan.ogg",
+      "use": "Mid-stage encounter",
+      "file_size_bytes": 575230,
+      "status": "READY"
+    },
+    {
+      "filename": "DaggerMan.ogg",
+      "use": "Boss rush stage select",
+      "file_size_bytes": 626586,
+      "status": "READY"
+    },
+    {
+      "filename": "LeafMan.ogg",
+      "use": "Final stage theme",
+      "file_size_bytes": 609727,
+      "status": "READY"
+    },
+    {
+      "filename": "MainMenu.ogg",
+      "use": "Mashup intro / stage intro",
+      "file_size_bytes": 289346,
+      "status": "READY"
+    },
+    {
+      "filename": "GameOver.ogg",
+      "use": "Defeat screen",
+      "file_size_bytes": 39865,
+      "status": "READY"
+    },
+    {
+      "filename": "GameClear.ogg",
+      "use": "Victory / stage complete",
+      "file_size_bytes": 118439,
+      "status": "READY"
+    }
+  ],
+  "robot_masters_in_game": [
+    "AxeMan",
+    "CoalMan",
+    "DaggerMan",
+    "LeafMan",
+    "TrashMan",
+    "WizardMan",
+    "ZapMan",
+    "SoakMan"
+  ],
+  "implementation_notes": "For v0.1.0 alpha, load Boss.ogg as the main boss encounter theme. Weapon themes (AxeMan.ogg, etc.) can be played on successful weapon pickups in later versions. All tracks are OGG Vorbis format, confirming compatibility with Cuphead's audio pipeline via wrapper."
+}

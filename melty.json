@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0-alpha",
+  "title": "Cuphead + Mega Man SFR Mashup",
+  "tagline": "Play as Mega Man in Cuphead's boss rush with Mega Man SFR weapons and music.",
+  "description": "A Cuphead-hosted boss rush mashup featuring Mega Man Super Fighting Robot's weapons, robot masters, and music from the player's installed copy. Fight classic Cuphead bosses using Mega Man's movement and weapon mechanics, with iconic Mega Man SFR music playing during encounters.",
+  "games": [
+    {
+      "slug": "custom-cuphead",
+      "role": "primary",
+      "name": "Cuphead",
+      "versions": ["any"],
+      "required": true
+    },
+    {
+      "slug": "custom-mega-man-sfr",
+      "role": "companion",
+      "name": "Mega Man Super Fighting Robot by MrWeirdGuy",
+      "versions": ["any"],
+      "required": true
+    }
+  ],
+  "launch": {
+    "kind": "game",
+    "args": ["{game}/Cuphead.exe"]
+  },
+  "fileMapping": [
+    {
+      "source": "megaman-sfr-launcher.dll",
+      "destination": "{game}/Mods/CupheadMegaManMashup/"
+    },
+    {
+      "source": "megaman-sfr-launcher-config.json",
+      "destination": "{game}/Mods/CupheadMegaManMashup/"
+    },
+    {
+      "source": "boss-data.json",
+      "destination": "{game}/Mods/CupheadMegaManMashup/"
+    }
+  ],
+  "credits": [
+    {
+      "name": "StudioMDHR Entertainment",
+      "role": "Cuphead (Host Game)",
+      "license": "Used with permission via Cuphead modding policy"
+    },
+    {
+      "name": "MrWeirdGuy",
+      "role": "Mega Man SFR (Companion Game)",
+      "license": "Fan game content, read from player's copy"
+    },
+    {
+      "name": "FakedblacK",
+      "role": "Mashup Design & Implementation",
+      "license": "Same as Cuphead modding terms"
+    }
+  ],
+  "remixable": true,
+  "status": "DRAFT - Implementation in progress"
+}
